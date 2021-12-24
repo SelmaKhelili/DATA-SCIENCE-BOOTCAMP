@@ -1,1 +1,134 @@
 
+String and List homework:
+ListOne=[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70,72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100 ,102 ,104, 106, 108, 110 ,112, 114 ,116 ,118, 120 ,122, 124, 126, 128, 130, 132, 134 ,136, 138, 140, 142 ,144, 146 ,148 ,150 ,152, 154, 156, 158, 160, 162, 164, 166, 168, 170 ,172, 174 ,176 ,178, 180 ,182 ,184 ,186 ,188 ,190, 192 ,194 ,196 ,198,200,202, 204, 206, 208, 210, 212, 214, 216, 218, 220, 222, 224, 226, 228, 230, 232, 234, 236, 238, 240, 242, 244, 246, 248, 250, 252, 254, 256, 258, 260, 262, 264, 266, 268, 270, 272, 274, 276, 278, 280, 282, 284, 286, 288, 290, 292, 294, 296, 298]
+print(len(ListOne))
+for i in ListOne:
+print(i**2)
+print(57 in ListOne)
+
+ 
+1/0 HOMEWORK
+#read the content of the file
+
+file = open('./inputs/student names.txt')
+#student = file.read()
+#print(student)
+#write new names to the file
+
+#student = student + "\nMira"
+#student = student + "\ncharlie"
+#file = open('./inputs/student names.txt','w')
+#file.write(student)
+
+#printing the first lines of the file
+
+with open('./inputs/student names.txt') as file :
+f= file.read(20)
+print(f,end='')
+
+#check if x is in the file
+print("emily"in file)
+
+file.close()
+
+
+Function Homework:
+
+#Homework 1
+
+function which return reverse of a string
+#Take use input as value to a variable
+#string = input("please enter a string")
+#def Palindrome(string):
+#return string == string[::-1]
+#if (Palindrome(string)):
+#print(string,"is a palindrome")
+#else:
+#print(string,"is not a palindrome")
+
+#Homework 2
+#x=int(input("please enter a number"))
+#def prime(x):
+
+for n in range(2, int(x**1/2)+1):
+  #  if(x%n==0):
+      #  return True
+  #  else:
+       # return False
+#Homewoek 3
+#def numrange(num):
+#if(num in range(2,7)):print(True)
+#numrange(6)
+
+#Homework 4
+#def facto(x, factorial=1):
+#if (x<0):
+#print("Error")
+#elif (x==0):
+#print(0)
+
+else:
+   # for a in range(x, x+1):
+   #     factorial=factorial*a
+  #  print(factorial)
+#Factorial=facto(7)
+#print(Factorial)
+
+#Homework 5
+#Create a programm to reverse a string
+
+Take input
+#string=input("please enter a string")
+#you may give another value
+
+string = " Hello World"
+#String = string [::-1]
+#print(String)
+
+#Homework 6
+#list=[1,2,3,4,5,6,7,8,9,10]
+#List = sum(list)
+#print(List)
+
+#Homework 7
+#a=(1,20,30)
+#x=max(a)
+#print(x)
+
+
+Exceptions Homework:
+try:
+a=12
+s='hello'
+print(a+s)
+except TypeError :
+w=int(a)
+print(w,s)
+
+
+OOP HOMEWORK
+1
+class Rectangle:
+length=23
+width=13
+area=length*width
+rectangle=Rectangle()
+print(rectangle.area)
+
+#2
+class Vehicle:
+max_speed=45
+mileage_instance=12
+#maruti=Vehicle()
+#print(maruti.max_speed)
+
+#3
+#class Vehicle:
+#pass
+
+#4
+class Bus(Vehicle):
+pass
+
+bus= Bus()
+print(bus.max_speed)
